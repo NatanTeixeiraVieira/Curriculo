@@ -1,0 +1,72 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.menu-navegacao {
+    margin: auto 0;
+}
+
+.navegacao {
+    display: flex;
+}
+
+.navegacao li {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 480px){
+    header {
+        position: relative;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .navegacao {
+        flex-direction: column;
+        margin: 20px 0 30px;
+    }
+
+    .navegacao li {
+        margin: 5px 0;
+        font-size: 22px;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 18px;
+        margin-right: 10%;
+    }
+}

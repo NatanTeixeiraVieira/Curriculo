@@ -1,0 +1,63 @@
+.contato {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.contato_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contato_lista li {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.mensagem legend{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#caixa-texto {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    vertical-align: middle;
+
+}
+
+.botao-enviar {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .contato {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .contato_lista {
+        margin-bottom: 30px;
+    }
+
+    .contato_lista li {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .mensagem legend {
+        font-size: 18px;
+    }
+
+    #caixa-texto {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}

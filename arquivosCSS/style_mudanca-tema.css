@@ -1,0 +1,57 @@
+/* modo escuro do cabeçalho */
+
+.dark_header {
+    background-color: #333333;
+}
+
+.dark_header a {
+    color: #F6F6F6;
+}
+
+.dark_header button {
+    background-color: #121212;
+    color: #F6F6F6;
+    border-color: #F6F6F6;
+}
+
+/* modo escuro da main */
+
+.dark_main {
+    background-color: #121212;
+}
+
+.dark_main h2, .dark_main h3 {
+    color: #F6F6F6;
+}
+
+.dark_main p, .dark_main li, .dark_main legend {
+    color: #cfcfcf
+}
+
+.dark_main .cursos_item {
+    background-color: #333333;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.dark_main #caixa-texto {
+    background-color: #000000;
+    border-color: #F6F6F6;
+    color: #cfcfcf;
+}
+
+.dark_main .botao-enviar {
+    background-color: #121212;
+    border-color: #F6F6F6;
+    color: #F6F6F6;
+}
+
+/* modo escuro do footer */
+
+.dark_footer {
+    background-color: #333333;
+}
+
+.dark_footer a {
+    color: #F6F6F6;
+}
+

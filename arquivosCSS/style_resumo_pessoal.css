@@ -1,0 +1,99 @@
+main {
+    padding-top: 120px;
+}
+
+.titulo-e-complemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;   
+}
+
+.complemento {
+    font-size: 20px;
+}
+
+.resumo-pessoal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dados-pessoais_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.dados-pessoais_lista li, .resumo-pessoal_paragrafo-complemento {
+    font-size: 18px;
+    margin-bottom: 3px;
+    
+}
+
+.pretencoes-para-futuro_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 40px 0 10px;
+}
+
+.competencias_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.competencias_explicação, .competencias_lista li {
+    font-size: 18px;
+}
+
+.competencias_explicação {
+    margin-bottom: 5px;
+}
+
+.competencias_lista li {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 480px) {
+    .titulo-e-complemento {
+        padding-top: 0;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .resumo-pessoal {
+        flex-direction: column;
+        margin: 0 3%;
+    }
+
+    .dados-pessoais_lista li{
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .resumo-pessoal_paragrafo-complemento div {
+        font-size: 18px;
+        display: flex;
+    }
+
+    .competencias {
+        margin-top: 40px;
+    }
+
+    .competencias p, .competencias_lista li {
+        font-size: 18px;
+    }
+}
+

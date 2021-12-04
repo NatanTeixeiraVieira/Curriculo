@@ -1,0 +1,25 @@
+footer {
+    padding: 50px 0;
+}
+
+.rodape_logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape_titulo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .rodape_logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape_titulo {
+        margin-bottom: 50px;
+    }
+}   
