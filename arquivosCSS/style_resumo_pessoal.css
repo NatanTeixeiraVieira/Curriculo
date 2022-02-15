@@ -24,6 +24,10 @@ main {
     justify-content: space-evenly;
 }
 
+.dados-pessoais {
+    width: 35%;
+}
+
 .dados-pessoais_titulo {
     font-weight: bold;
     font-size: 25px;
@@ -32,8 +36,7 @@ main {
 
 .dados-pessoais_lista li, .resumo-pessoal_paragrafo-complemento {
     font-size: 18px;
-    margin-bottom: 3px;
-    
+    margin-bottom: 3px;  
 }
 
 .pretencoes-para-futuro_titulo {
@@ -78,6 +81,10 @@ main {
         margin: 0 3%;
     }
 
+    .dados-pessoais {
+        width: 100%;
+    }
+
     .dados-pessoais_lista li{
         font-size: 18px;
         margin: 5px 0;
@@ -96,4 +103,3 @@ main {
         font-size: 18px;
     }
 }
-

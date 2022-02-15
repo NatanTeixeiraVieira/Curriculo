@@ -24,7 +24,7 @@
     color: #F6F6F6;
 }
 
-.dark_main p, .dark_main li, .dark_main legend {
+.dark_main p, .dark_main li, .dark_main label, .dark_main a {
     color: #cfcfcf
 }
 

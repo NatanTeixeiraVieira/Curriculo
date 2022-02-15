@@ -12,10 +12,15 @@
 
 .contato_lista li {
     font-size: 18px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
-.mensagem legend{
+.contato_lista a:hover {
+    text-decoration: underline;
+}
+
+.mensagem label{
+    display: flex;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -50,7 +55,7 @@
         margin: 5px 0;
     }
 
-    .mensagem legend {
+    .mensagem label {
         font-size: 18px;
     }
 
