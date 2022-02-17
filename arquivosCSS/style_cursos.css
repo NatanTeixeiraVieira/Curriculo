@@ -52,7 +52,7 @@
     margin-right: 3px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .cursos_lista {
         flex-direction: column;
         margin-left: 5%;
