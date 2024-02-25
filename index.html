@@ -1,325 +1,464 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo</title>
-    <link rel="stylesheet" href="arquivosCSS/reset.css">
-    <link rel="stylesheet" href="arquivosCSS/style.css">
-    <link rel="stylesheet" href="arquivosCSS/style_cabecalho.css">
-    <link rel="stylesheet" href="arquivosCSS/style_resumo_pessoal.css">
-    <link rel="stylesheet" href="arquivosCSS/style_cursos.css">
-    <link rel="stylesheet" href="arquivosCSS/style_contato.css">
-    <link rel="stylesheet" href="arquivosCSS/style_rodape.css">
-    <link rel="stylesheet" href="arquivosCSS/style_mudanca-tema.css">
-</head>
+    <link rel="stylesheet" href="arquivosCSS/reset.css" />
+    <link rel="stylesheet" href="arquivosCSS/style.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_cabecalho.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_resumo_pessoal.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_cursos.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_contato.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_rodape.css" />
+    <link rel="stylesheet" href="arquivosCSS/style_mudanca-tema.css" />
+  </head>
 
-<body>
-
+  <body>
     <header id="header">
-        <div class="container" id="container_js">
-            <h1><a href="">CurrículoNatãn</a></h1>
-            <nav class="menu-navegacao">
-                <ul class="navegacao">
-                    <li><a href="#main">Resumo Pessoal</a></li>
-                    <li><a href="#cursos">Cursos Concluidos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <button onclick="mudarTema()">Mudar Tema</button>
-        </div>
+      <div class="container" id="container_js">
+        <h1><a href="">CurrículoNatãn</a></h1>
+        <nav class="menu-navegacao">
+          <ul class="navegacao">
+            <li><a href="#main">Resumo Pessoal</a></li>
+            <li><a href="#cursos">Cursos Concluidos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <button onclick="mudarTema()">Mudar Tema</button>
+      </div>
     </header>
 
     <main id="main">
-        <div class="titulo-e-complemento">
-            <div>
-                <h2 class="titulo">Natãn Teixeira Vieira</h2>
-                <p class="complemento">Estudante de programação</p>
-            </div>
-
+      <div class="titulo-e-complemento">
+        <div>
+          <h2 class="titulo">Natãn Teixeira Vieira</h2>
+          <p class="complemento">Desenvolvedor web</p>
         </div>
+      </div>
 
-        <section class="resumo-pessoal">
+      <section class="resumo-pessoal">
+        <!-- dados pessoais -->
+        <div class="dados-pessoais">
+          <h3 class="dados-pessoais_titulo">Dados Pessoais</h3>
+          <ul class="dados-pessoais_lista">
+            <li id="idade"></li>
+            <li>Escolaridade: Cursando Engenharia de Software;</li>
+            <li>Emprego: Desenvolvedor Full Stack;</li>
+            <li>Cidade: Guarapuava.</li>
+          </ul>
+          <div class="pretencoes-para-futuro">
+            <h3 class="pretencoes-para-futuro_titulo">
+              Pretenções para o futuro
+            </h3>
+            <p class="resumo-pessoal_paragrafo-complemento">
+              Para o futuro, pretendo me desenvolver profissionalmente e me
+              aperfeiçoar cada vez mais no desenvolvimento web.
+            </p>
+          </div>
+        </div>
+        <!-- /dados pessoais -->
 
-            <!-- dados pessoais -->
-            <div class="dados-pessoais">
-                <h3 class="dados-pessoais_titulo">Dados Pessoais</h3>
-                <ul class="dados-pessoais_lista">
-                    <li id="idade"></li>
-                    <li>Escolaridade: Ensino Médio completo;</li>
-                    <li>Cursos concluidos: Alura: Mobile baseado em Javascript;</li>
-                    <li>Cidade: Guarapuava.</li>
-                </ul>
-                <div class="pretencoes-para-futuro">
-                    <h3 class="pretencoes-para-futuro_titulo">Pretenções para o futuro</h3>
-                    <p class="resumo-pessoal_paragrafo-complemento">
-                        Pretendo começar o curso de Engenharia de Software
-                        e atuar na área de TI como desenvolvedor web. Além
-                        disso, estou disposto a aprender novas tecnologias.
-                    </p>
+        <!-- competencias -->
+        <div class="competencias">
+          <h3 class="competencias_titulo">Competências</h3>
+          <p class="competencias_explicação">Conhecimentos básicos em:</p>
+          <ul class="competencias_lista">
+            <li>HTML;</li>
+            <li>CSS;</li>
+            <li>JavaScript;</li>
+            <li>TypeScript;</li>
+            <li>React;</li>
+            <li>NextJS;</li>
+            <li>Java;</li>
+            <li>Spring Boot.</li>
+          </ul>
+        </div>
+        <!-- /competencias -->
+      </section>
+      <div id="cursos"></div>
+      <section>
+        <h3 class="cursos_titulo">Cursos Concluidos</h3>
+        <ul class="cursos_lista">
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/logica-programacao-javascript-html"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/logica-programacao-javascript-html.svg"
+                  alt="Logo do curso de lógica de programação parte 1"
+                />
+              </div>
 
-                </div>
+              <p>
+                Lógica de programação I: Os primeiros programas com Javascript e
+                HTML
+              </p>
+            </a>
+          </li>
 
-            </div>
-            <!-- /dados pessoais -->
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/logica-programacao-pratica-com-desenho-animacoes-em-jogo"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/logica-programacao-pratica-com-desenho-animacoes-em-jogo.svg"
+                  alt="Logo do curso de lógica de programação parte 2"
+                />
+              </div>
 
-            <!-- competencias -->
-            <div class="competencias">
-                <h3 class="competencias_titulo">Competências</h3>
-                <p class="competencias_explicação">Conhecimentos básicos em:</p>
-                <ul class="competencias_lista">
-                    <li>HTML;</li>
-                    <li>CSS;</li>
-                    <li>JavaScript;</li>
-                    <li>React.</li>
-                </ul>
-            </div>
-            <!-- /competencias -->
+              <p>
+                Lógica de programação II: pratique com desenhos, animações e um
+                jogo
+              </p>
+            </a>
+          </li>
 
-        </section>
-        <div id="cursos"></div>
-        <section>
-            <h3 class="cursos_titulo">Cursos Concluidos</h3>
-            <ul class="cursos_lista">
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/logica-programacao-javascript-html"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/logica-programacao-javascript-html.svg"
-                                alt="Logo do curso de lógica de programação parte 1">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-primeiros-passos"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg"
+                  alt="Logo do curso de HTML e CSS parte 1"
+                />
+              </div>
 
-                        <p>Lógica de programação I: Os primeiros programas com Javascript e HTML</p>
-                    </a>
-                </li>
+              <p>HTML5 e CSS3 parte 1: A primeira página da Web</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/logica-programacao-pratica-com-desenho-animacoes-em-jogo"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/logica-programacao-pratica-com-desenho-animacoes-em-jogo.svg"
-                                alt="Logo do curso de lógica de programação parte 2">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-posicionamento-listas-navegacao"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/html5-css3-posicionamento-listas-navegacao.svg"
+                  alt="Logo do curso de HTML e CSS parte 2"
+                />
+              </div>
 
-                        <p>Lógica de programação II: pratique com desenhos, animações e um jogo</p>
-                    </a>
-                </li>
+              <p>HTML5 e CSS3 parte 2: Posicionamento, listas e navegação</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-primeiros-passos"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg"
-                                alt="Logo do curso de HTML e CSS parte 1">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-formularios-tabelas"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/html5-css3-formularios-tabelas.svg"
+                  alt="Logo do curso de HTML e CSS parte 3"
+                />
+              </div>
 
-                        <p>HTML5 e CSS3 parte 1: A primeira página da Web</p>
-                    </a>
-                </li>
+              <p>HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-posicionamento-listas-navegacao"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/html5-css3-posicionamento-listas-navegacao.svg"
-                                alt="Logo do curso de HTML e CSS parte 2">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-avancando-css"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/html5-css3-avancando-css.svg"
+                  alt="Logo do curso de HTML e CSS parte 4"
+                />
+              </div>
 
-                        <p>HTML5 e CSS3 parte 2: Posicionamento, listas e navegação</p>
-                    </a>
-                </li>
+              <p>Curso de HTML5 e CSS3 parte 4: Avançando no CSS</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-formularios-tabelas"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/html5-css3-formularios-tabelas.svg"
-                                alt="Logo do curso de HTML e CSS parte 3">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/posicione-elementos-com-flexbox"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg"
+                  alt="Logo do curso de Flexbox"
+                />
+              </div>
 
-                        <p>HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas</p>
-                    </a>
-                </li>
+              <p>Curso de Flexbox: Posicione elementos na tela</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/html5-css3-avancando-css"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/html5-css3-avancando-css.svg"
-                                alt="Logo do curso de HTML e CSS parte 4">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/mobile-first-layouts-responsivos"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/mobile-first-layouts-responsivos.svg"
+                  alt="Logo do curso de Layouts Responsivos"
+                />
+              </div>
 
-                        <p>Curso de HTML5 e CSS3 parte 4: Avançando no CSS</p>
-                    </a>
-                </li>
+              <p>
+                Curso de Layouts Responsivos: Trabalhando com layouts mobile
+              </p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/posicione-elementos-com-flexbox"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg"
-                                alt="Logo do curso de Flexbox">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascript-introducao"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/javascript-introducao.svg"
+                  alt="Logo do curso de JavaScript"
+                />
+              </div>
 
-                        <p>Curso de Flexbox: Posicione elementos na tela</p>
-                    </a>
-                </li>
+              <p>Curso de JavaScript: primeiros passos com a linguagem</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/mobile-first-layouts-responsivos"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/mobile-first-layouts-responsivos.svg"
-                                alt="Logo do curso de Layouts Responsivos">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascritpt-orientacao-objetos"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/javascritpt-orientacao-objetos.svg"
+                  alt="Logo do curso de JavaScript: Programação Orientada a Objetos parte 1"
+                />
+              </div>
 
-                        <p>Curso de Layouts Responsivos: Trabalhando com layouts mobile</p>
-                    </a>
-                </li>
+              <p>Curso de JavaScript: Programando a Orientação a Objetos</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascript-introducao"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/javascript-introducao.svg"
-                                alt="Logo do curso de JavaScript">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascript-polimorfismo"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/javascript-polimorfismo.svg"
+                  alt="Logo do curso de JavaScript: Programação Orientada a Objetos parte 2"
+                />
+              </div>
 
-                        <p>Curso de JavaScript: primeiros passos com a linguagem</p>
-                    </a>
-                </li>
+              <p>
+                Curso de JavaScript: Interfaces e Herança em Orientação a
+                Objetos
+              </p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascritpt-orientacao-objetos"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/javascritpt-orientacao-objetos.svg"
-                                alt="Logo do curso de JavaScript: Programação Orientada a Objetos parte 1">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-js"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-js.svg"
+                  alt="Logo do curso de React parte 1"
+                />
+              </div>
 
-                        <p>Curso de JavaScript: Programando a Orientação a Objetos</p>
-                    </a>
-                </li>
+              <p>Curso de React: Entendendo como a biblioteca funciona</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/javascript-polimorfismo"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/javascript-polimorfismo.svg"
-                                alt="Logo do curso de JavaScript: Programação Orientada a Objetos parte 2">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-ciclo-de-vida"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-ciclo-de-vida.svg"
+                  alt="Logo do curso de React parte 2"
+                />
+              </div>
 
-                        <p>Curso de JavaScript: Interfaces e Herança em Orientação a Objetos</p>
-                    </a>
-                </li>
+              <p>Curso de React: Ciclo de vida dos componentes</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-js"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-js.svg"
-                                alt="Logo do curso de React parte 1">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-function-components"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-function-components.svg"
+                  alt="Logo do curso de React parte 3"
+                />
+              </div>
 
-                        <p>Curso de React: Entendendo como a biblioteca funciona</p>
-                    </a>
-                </li>
+              <p>Curso de React: Function Components, uma abordagem moderna</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-ciclo-de-vida"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-ciclo-de-vida.svg"
-                                alt="Logo do curso de React parte 2">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-hooks-e-formularios"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-hooks-e-formularios.svg"
+                  alt="Logo do curso de React parte 4"
+                />
+              </div>
 
-                        <p>Curso de React: Ciclo de vida dos componentes</p>
-                    </a>
-                </li>
+              <p>Curso de React: Hooks, Contextos e boas práticas</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-function-components"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-function-components.svg"
-                                alt="Logo do curso de React parte 3">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-router-navegacao-spa"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-router-navegacao-spa.svg"
+                  alt="Logo do curso de React Router"
+                />
+              </div>
 
-                        <p>Curso de React: Function Components, uma abordagem moderna</p>
-                    </a>
-                </li>
+              <p>Curso de React Router: Navegação em uma SPA</p>
+            </a>
+          </li>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-hooks-e-formularios"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-hooks-e-formularios.svg"
-                                alt="Logo do curso de React parte 4">
-                        </div>
+          <li class="cursos_item">
+            <a
+              href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-styled-components"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="https://www.alura.com.br/assets/api/cursos/react-styled-components.svg"
+                  alt="Logo do curso de React com Styled Components"
+                />
+              </div>
 
-                        <p>Curso de React: Hooks, Contextos e boas práticas</p>
-                    </a>
-                </li>
+              <p>Curso de React: Abstraindo seu CSS com Styled Components</p>
+            </a>
+          </li>
+          <li class="cursos_item">
+            <a
+              href="https://www.udemy.com/certificate/UC-39531ab5-1a68-4e04-879c-761b47289ce2/"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  src="./images/nextjs-logo.png"
+                  alt="Logo do NextJs"
+                  class="fixed-logo"
+                />
+              </figure>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-router-navegacao-spa"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-router-navegacao-spa.svg"
-                                alt="Logo do curso de React Router">
-                        </div>
+              <p>Curso de React.js e Next.js</p>
+            </a>
+          </li>
+          <li class="cursos_item">
+            <a
+              href="https://www.udemy.com/certificate/UC-a4465b49-42e0-4cd9-9c48-d902e22637bd/"
+              class="cursos_itens"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  src="./images/spring-logo.png"
+                  alt="Logo do Spring"
+                  class="fixed-logo"
+                />
+              </figure>
 
-                        <p>Curso de React Router: Navegação em uma SPA</p>
-                    </a>
-                </li>
+              <p>
+                REST APIs RESTFull do 0 à AWS com Spring Boot 3, Java e Docker
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-                <li class="cursos_item">
-                    <a href="https://cursos.alura.com.br/certificate/natan-teixeira-vieira/react-styled-components"
-                        class="cursos_itens">
-                        <div>
-                            <img src="https://www.alura.com.br/assets/api/cursos/react-styled-components.svg"
-                                alt="Logo do curso de React com Styled Components">
-                        </div>
-
-                        <p>Curso de React: Abstraindo seu CSS com Styled Components</p>
-                    </a>
-                </li>
+      <section id="contato">
+        <div class="contato">
+          <div>
+            <h3 class="contato_titulo">Contato</h3>
+            <ul class="contato_lista">
+              <li>
+                Github:
+                <a href="https://github.com/NatanTeixeiraVieira"
+                  >https://github.com/NatanTeixeiraVieira</a
+                >
+              </li>
             </ul>
-        </section>
-
-        <section id="contato">
-            <div class="contato">
-                <div>
-                    <h3 class="contato_titulo">Contato</h3>
-                    <ul class="contato_lista">
-                        <li>Github: <a href="https://github.com/NatanTeixeiraVieira">https://github.com/NatanTeixeiraVieira</a>
-                        </li>
-                    </ul>
-                </div>
-                <form>
-                    <fieldset class="mensagem">
-                        <label for="caixa-texto">Escreva sua mensagem</label>
-                        <textarea id="caixa-texto" cols="50" rows="4"></textarea>
-                        <input type="submit" value="Enviar" class="botao-enviar">
-                    </fieldset>
-                </form>
-            </div>
-        </section>
+          </div>
+          <form>
+            <fieldset class="mensagem">
+              <label for="caixa-texto">Escreva sua mensagem</label>
+              <textarea id="caixa-texto" cols="50" rows="4"></textarea>
+              <input type="submit" value="Enviar" class="botao-enviar" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
-        <div class="rodape_logos">
-            <h3 class="rodape_titulo"><a href="">CurrículoNatãn</a></h3>
+      <div class="rodape_logos">
+        <a href="https://cursos.alura.com.br">
+          <img
+            src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg"
+            alt="Logo da Alura"
+          />
+        </a>
+        <h3 class="rodape_titulo"><a href="">CurrículoNatãn</a></h3>
 
-            <a href="https://cursos.alura.com.br">
-                <img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" alt="Logo da Alura">
-            </a>
-        </div>
+        <a href="https://www.udemy.com">
+          <img src="./images/udemy-logo.png" alt="Logo da Udemy" />
+        </a>
+      </div>
     </footer>
 
     <script src="arquivoJS/script.js"></script>
-</body>
-
+  </body>
 </html>

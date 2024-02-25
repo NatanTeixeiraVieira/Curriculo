@@ -1,77 +1,80 @@
 .cursos_titulo {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    margin: 50px 0;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 0;
 }
 
 .cursos_lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  gap: 1rem;
+  justify-content: center;
 }
 
 .cursos_item {
-    background-color: #FFFFFF;
-    width: 21%;
-    margin: 1%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 1em 0;
-    box-shadow: 3px 3px 5px rgb(107, 104, 104);
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  box-shadow: 3px 3px 5px rgb(107, 104, 104);
+}
+
+.cursos_item .fixed-logo {
+  width: 50px;
+  margin: 0 16px 0 4px;
 }
 
 .cursos_lista li:nth-child(4n + 1) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .cursos_lista li:nth-child(4n) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .cursos_lista li:hover {
-    box-shadow: none;
-    transition: 400ms;
-}
-
-.cursos_lista li:nth-last-child(-n + 1) {
-    margin-right: 69%;
+  box-shadow: none;
+  transition: 400ms;
 }
 
 .cursos_itens {
-    display: flex;
+  display: flex;
 }
 
 .cursos_itens div {
-    width: 90px;
-    height: auto;
-    margin: 0 15px 0 5px;
+  width: 90px;
+  height: auto;
+  margin: 0 15px 0 5px;
 }
 
 .cursos_itens p {
-    margin-right: 3px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-    .cursos_lista {
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+  .cursos_lista {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-    .cursos_item {
-        width: 100%;
-        height: 110px;
-        margin-left: 0;
-        margin-right: 0;
-        
-    }
+  .cursos_item {
+    width: 100%;
+    height: 110px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .cursos_item img {
-        width: 60px;
-    }
+  .cursos_item img {
+    width: 60px;
+  }
 
-    .cursos_item p {
-        font-size: 18px;
-    }
+  .cursos_item p {
+    font-size: 18px;
+  }
 }

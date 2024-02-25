@@ -1,25 +1,30 @@
 footer {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .rodape_logos {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .rodape_titulo {
-    font-weight: bold;
-    font-size: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.rodape_logos img {
+  height: 40px;
 }
 
 @media screen and (max-width: 768px) {
-    .rodape_logos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .rodape_logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .rodape_titulo {
-        margin-bottom: 50px;
-    }
-}   
+  .rodape_titulo {
+    margin-bottom: 50px;
+  }
+}
